@@ -11,7 +11,7 @@ import lombok.Data;
 @Schema(name = "ErrorResponse", description = "Schema to hold error response information")
 @Data
 @AllArgsConstructor
-public class ErrorDto {
+public class ErrorResponseDto {
 
     @Schema(description = "API path invoked by client")
     private String apiPath;
