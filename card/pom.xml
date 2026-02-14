@@ -11,6 +11,7 @@
 	<groupId>com.microservice</groupId>
 	<artifactId>card</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>card</name>
 	<description>Card microservice</description>
 	<url/>
@@ -112,6 +113,16 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+				<to>
+					<image>ak0705/${project.artifactId}:1.0</image>
+				</to>
+				</configuration>
+      		</plugin>
 		</plugins>
 	</build>
 

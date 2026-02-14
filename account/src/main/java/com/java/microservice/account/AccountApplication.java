@@ -2,7 +2,10 @@ package com.java.microservice.account;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
+import com.java.microservice.account.dto.AccountsContactInfoDto;
 
 import io.swagger.v3.oas.annotations.ExternalDocumentation;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
@@ -14,6 +17,7 @@ import io.swagger.v3.oas.annotations.info.License;
 // @ComponentScans(@ComponentScan("com.java.microservice.account.controller"))
 // @EnableJpaRepositories("com.java.microservice.account.repository")
 // @EntityScan("com.java.microservice.account.entity")
+@EnableConfigurationProperties(value = {AccountsContactInfoDto.class})
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(
 	info = @Info(
