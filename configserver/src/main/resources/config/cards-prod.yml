@@ -1,0 +1,15 @@
+spring:
+    config:
+        activate:
+            on-profile: "prod"
+
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to accounts related prod apis"
+  contactDetails:
+    name: "Aditya shah - Product Owner"
+    email: "shahaditya292@gmail.com"
+  onCallSupport:
+    - +91 8588962288

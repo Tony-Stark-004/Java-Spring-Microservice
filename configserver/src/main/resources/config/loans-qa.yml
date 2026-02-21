@@ -1,0 +1,10 @@
+build:
+  version: "2.0"
+
+loans:
+  message: "Welcome to accounts related QA apis"
+  contactDetails:
+    name: "Aditya shah - QA Lead"
+    email: "shahaditya292@gmail.com"
+  onCallSupport:
+    - +91 8588962288

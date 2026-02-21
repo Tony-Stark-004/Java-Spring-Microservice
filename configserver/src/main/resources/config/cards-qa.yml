@@ -6,7 +6,7 @@ spring:
 build:
   version: "2.0"
 
-accounts:
+cards:
   message: "Welcome to accounts related QA apis"
   contactDetails:
     name: "Aditya shah - QA Lead"

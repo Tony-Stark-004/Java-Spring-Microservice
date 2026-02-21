@@ -16,14 +16,13 @@ spring:
       mode: always
   config:
     import: 
-      - "application_qa.yml"
-      - "application_prod.yml"
       - "optional:configserver:http://localhost:8071/"
+      
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-build:
-  version: "3.0"
+# Expose all actuator endpoints over HTTP
+management.endpoints.web.exposure.include: "*"

@@ -1,12 +1,7 @@
-spring:
-    config:
-        activate:
-            on-profile: "prod"
-
 build:
   version: "1.0"
 
-accounts:
+loans:
   message: "Welcome to accounts related prod apis"
   contactDetails:
     name: "Aditya shah - Product Owner"
