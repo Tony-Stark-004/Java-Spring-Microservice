@@ -24,5 +24,13 @@ spring:
     username: "guest"
     password: "guest"
 
+
+
 # Expose all actuator endpoints over HTTP
-management.endpoints.web.exposure.include: "*"
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+        
